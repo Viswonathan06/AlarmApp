@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTimePickerDialogStyle" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="showTitle">false</item>
+        <item name="colorControlActivated">#FF99CC00</item>
+        <item name="colorAccent">#FF99CC00</item>
+        <item name="android:textColorPrimary">#43a047</item>
+        <item name="android:textColorSecondary">#f44336</item>
+    </style>
+
+    <style name="MyTimePickerWidgetStyle" parent="@android:style/Widget.Material.TimePicker" tools:targetApi="lollipop">
+        <item name="android:headerBackground">#343733</item>
+        <item name="android:numbersTextColor">#FF99CC00</item>
+        <item name="android:numbersInnerTextColor" tools:targetApi="m">#FF99CC00</item>
+        <item name="android:numbersSelectorColor">#33691e</item>
+        <item name="android:numbersBackgroundColor">#ffffff</item>
+        <item name="android:amPmTextColor">#9c27b0</item>
+    </style>
+
+</resources>

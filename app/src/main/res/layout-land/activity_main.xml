@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C464A"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TimePicker
+        android:id="@+id/timPicker"
+        style="@style/MyTimePickerWidgetStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:layout_gravity="center"
+        android:theme="@style/MyTimePickerWidgetStyle"
+        >
+
+
+    </TimePicker>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3C464A"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3C464A"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter your alarm message "
+                android:textColor="@android:color/white">
+
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:text="Wake me up on specific days :"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkSun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="S"
+                    android:textColor="#BFEF87" />
+
+                <CheckBox
+                    android:id="@+id/checkMon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+
+                    android:text="M"
+                    android:textColor="#BFEF87" />
+
+                <CheckBox
+                    android:id="@+id/checkTue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="T"
+                    android:textColor="#BFEF87"
+
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkWed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="W"
+
+                    android:textColor="#BFEF87" />
+
+                <CheckBox
+                    android:id="@+id/checkThu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="T"
+
+                    android:textColor="#BFEF87" />
+
+                <CheckBox
+                    android:id="@+id/checkFri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="F"
+
+                    android:textColor="#BFEF87" />
+
+                <CheckBox
+                    android:id="@+id/checkSat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="S"
+
+                    android:textColor="#BFEF87" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use this tune! "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/tune1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tune 1"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/tune2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tune 2"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/tune3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tune 3"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:text="Make it harder for me to stop!  "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textStyle="bold">
+                </TextView>
+
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/hard"
+
+
+                    >
+
+
+                </Switch>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Click the button to set your alarm!:  "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/setAlarm"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/icons8_alarm_clock_64"></ImageButton>
+            
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Select other features of the app!"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#486549"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/stopwatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="StopWatch" />
+
+                <Button
+                    android:id="@+id/Timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Timer" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
